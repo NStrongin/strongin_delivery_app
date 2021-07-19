@@ -1,0 +1,12 @@
+<h1>Courier</h1>
+
+<ul>
+  <% @couriers.each do |courier| %>
+    <li>
+    <%= link_to courier.name, courier%>
+    <!--<a href="<%= courier_path(courier)%>"><%= courier.name%></a>-->
+    </li>
+  <% end %>
+</ul>
+
+<div><%= link_to "New Courier", new_courier_path%></div>

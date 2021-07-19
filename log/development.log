@@ -1,0 +1,1795 @@
+Started GET "/articles" for 127.0.0.1 at 2021-07-19 00:39:04 +0300
+  
+ActiveRecord::NoDatabaseError (ВАЖНО:  база данных "delivery_app_development" не существует
+):
+  
+activerecord (6.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (6.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.4) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.4) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.4) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.4) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.4) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.4) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.4) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.2) lib/mini_profiler/profiler.rb:384:in `call'
+webpacker (5.4.0) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4) lib/rails/engine.rb:539:in `call'
+puma (5.3.2) lib/puma/configuration.rb:249:in `call'
+puma (5.3.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
+puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.3.2) lib/puma/server.rb:438:in `process_client'
+puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  [1m[35m (889.6ms)[0m  [1m[35mCREATE DATABASE "delivery_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (850.2ms)[0m  [1m[35mCREATE DATABASE "delivery_app_test" ENCODING = 'unicode'[0m
+Started GET "/" for 127.0.0.1 at 2021-07-19 00:40:17 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/nikita/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/nikita/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.0ms | Allocations: 494)
+Completed 200 OK in 17ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 4027)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-07-19 00:40:34 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/articles"):
+  
+Started GET "/articles" for 127.0.0.1 at 2021-07-19 00:41:08 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 143)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/nikita/Рабочий стол/Course/delivery_app/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: e2f281de3ea1fdc4fa5a
+Version: webpack 4.46.0
+Time: 1268ms
+Built at: 07/19/2021 12:41:10 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-be412d64645010827f4e.js    125 KiB  application  [emitted] [immutable]  application
+js/application-be412d64645010827f4e.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-be412d64645010827f4e.js js/application-be412d64645010827f4e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2952.2ms | Allocations: 27339)
+Completed 200 OK in 2962ms (Views: 2961.1ms | ActiveRecord: 0.0ms | Allocations: 28793)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-19 00:42:15 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 57)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 5831)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 6643)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-07-19 00:42:19 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 5591)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.0ms | Allocations: 6080)
+
+
+  [1m[35m (277.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (128.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (12.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1652207258149384335)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCouriers (20210718214738)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (116.1ms)[0m  [1m[35mCREATE TABLE "couriers" ("id" bigserial primary key, "name" character varying, "email" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210718214738"]]
+  [1m[36mTRANSACTION (27.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-07-18 21:51:50.047659"], ["updated_at", "2021-07-18 21:51:50.047659"]]
+  [1m[36mTRANSACTION (31.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(1652207258149384335)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCourier Create (1.0ms)[0m  [1m[32mINSERT INTO "couriers" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Andrey"], ["email", "test@gmail.com"], ["created_at", "2021-07-18 22:18:55.495805"], ["updated_at", "2021-07-18 22:18:55.495805"]]
+  [1m[36mTRANSACTION (64.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2021-07-19 01:26:52 +0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 3734)
+
+
+  
+NameError (uninitialized constant ArticlesController::Couriers):
+  
+app/controllers/articles_controller.rb:3:in `index'
+  [1m[36mCourier Load (0.3ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+Started GET "/" for 127.0.0.1 at 2021-07-19 01:30:01 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mCourier Load (0.7ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 5123)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 80.8ms | Allocations: 15092)
+Completed 200 OK in 87ms (Views: 79.3ms | ActiveRecord: 4.6ms | Allocations: 17262)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-19 01:30:25 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mCourier Load (1.0ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1205)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 7166)
+Completed 200 OK in 17ms (Views: 12.4ms | ActiveRecord: 1.0ms | Allocations: 8618)
+
+
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCourier Create (0.7ms)[0m  [1m[32mINSERT INTO "couriers" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Nikita"], ["email", "test1@gmail.com"], ["created_at", "2021-07-18 22:37:47.604614"], ["updated_at", "2021-07-18 22:37:47.604614"]]
+  [1m[36mTRANSACTION (28.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCourier Create (0.7ms)[0m  [1m[32mINSERT INTO "couriers" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sanya"], ["email", "test2@gmail.com"], ["created_at", "2021-07-18 22:37:51.617339"], ["updated_at", "2021-07-18 22:37:51.617339"]]
+  [1m[36mTRANSACTION (23.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCourier Load (0.9ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+Started GET "/" for 127.0.0.1 at 2021-07-19 01:38:12 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mCourier Load (1.0ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 21.3ms | Allocations: 4291)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 9847)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 12.5ms | Allocations: 10365)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-19 01:47:23 +0300
+  
+SyntaxError (/home/nikita/Рабочий стол/Course/delivery_app/config/routes.rb:4: syntax error, unexpected local variable or method, expecting `end'
+  get "/courier, to: "courier#index"
+                      ^~~~~~~
+/home/nikita/Рабочий стол/Course/delivery_app/config/routes.rb:6: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:4: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:6: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:4: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:6: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:4: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:6: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2021-07-19 01:48:14 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/" for 127.0.0.1 at 2021-07-19 01:48:56 +0300
+Processing by CourierController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/index.html.erb within layouts/application
+  [1m[36mCourier Load (0.7ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/courier/index.html.erb:4
+  Rendered courier/index.html.erb within layouts/application (Duration: 17.2ms | Allocations: 6793)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 84.9ms | Allocations: 26733)
+Completed 200 OK in 88ms (Views: 86.0ms | ActiveRecord: 9.1ms | Allocations: 28738)
+
+
+Started GET "/courier" for 127.0.0.1 at 2021-07-19 01:49:06 +0300
+Processing by CourierController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/index.html.erb within layouts/application
+  [1m[36mCourier Load (0.9ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/courier/index.html.erb:4
+  Rendered courier/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 908)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 6471)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.9ms | Allocations: 6980)
+
+
+Started GET "/courier" for 127.0.0.1 at 2021-07-19 01:52:11 +0300
+Processing by CourierController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/index.html.erb within layouts/application
+  [1m[36mCourier Load (0.5ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/courier/index.html.erb:4
+  Rendered courier/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 4218)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 10021)
+Completed 200 OK in 14ms (Views: 8.4ms | ActiveRecord: 5.1ms | Allocations: 11281)
+
+
+Started GET "/courier" for 127.0.0.1 at 2021-07-19 01:54:10 +0300
+Processing by CourierController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/index.html.erb within layouts/application
+  [1m[36mCourier Load (2.5ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/courier/index.html.erb:4
+  Rendered courier/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 1224)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 7183)
+Completed 200 OK in 30ms (Views: 23.8ms | ActiveRecord: 2.5ms | Allocations: 8591)
+
+
+Started GET "/courier/Andrey" for 127.0.0.1 at 2021-07-19 01:54:20 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"name"=>"Andrey"}
+  [1m[36mCourier Load (0.9ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+Completed 404 Not Found in 24ms (ActiveRecord: 1.9ms | Allocations: 3877)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Courier with 'id'=Andrey):
+  
+app/controllers/courier_controller.rb:7:in `show'
+Started GET "/" for 127.0.0.1 at 2021-07-19 14:06:15 +0300
+  [1m[35m (39.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CourierController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/index.html.erb within layouts/application
+  [1m[36mCourier Load (34.3ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/courier/index.html.erb:4
+  Rendered courier/index.html.erb within layouts/application (Duration: 61.9ms | Allocations: 5011)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 141.2ms | Allocations: 21418)
+Completed 200 OK in 157ms (Views: 87.4ms | ActiveRecord: 55.8ms | Allocations: 25516)
+
+
+Started GET "/courier" for 127.0.0.1 at 2021-07-19 14:06:41 +0300
+Processing by CourierController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/index.html.erb within layouts/application
+  [1m[36mCourier Load (0.7ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/courier/index.html.erb:4
+  Rendered courier/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 6728)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.7ms | Allocations: 7333)
+
+
+Started GET "/courier/1" for 127.0.0.1 at 2021-07-19 14:06:46 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourier Load (0.8ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 5840)
+Completed 200 OK in 15ms (Views: 6.8ms | ActiveRecord: 1.3ms | Allocations: 9867)
+
+
+Started GET "/courier/2" for 127.0.0.1 at 2021-07-19 14:06:49 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourier Load (0.8ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 5605)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.8ms | Allocations: 6795)
+
+
+Started GET "/courier/3" for 127.0.0.1 at 2021-07-19 14:06:52 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCourier Load (3.1ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 5599)
+Completed 200 OK in 16ms (Views: 5.5ms | ActiveRecord: 3.1ms | Allocations: 6732)
+
+
+Started GET "/courier/4" for 127.0.0.1 at 2021-07-19 14:06:55 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCourier Load (0.8ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.8ms | Allocations: 1289)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Courier with 'id'=4):
+  
+app/controllers/courier_controller.rb:7:in `show'
+Started GET "/courier/3" for 127.0.0.1 at 2021-07-19 14:06:58 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCourier Load (0.6ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 5740)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.6ms | Allocations: 7064)
+
+
+Started GET "/courier/3" for 127.0.0.1 at 2021-07-19 14:09:28 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCourier Load (2.1ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 179)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 6142)
+Completed 200 OK in 29ms (Views: 20.3ms | ActiveRecord: 2.1ms | Allocations: 8150)
+
+
+Started GET "/courier" for 127.0.0.1 at 2021-07-19 14:09:30 +0300
+Processing by CourierController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/index.html.erb within layouts/application
+  [1m[36mCourier Load (0.6ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/courier/index.html.erb:4
+  Rendered courier/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1159)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 6720)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.6ms | Allocations: 7354)
+
+
+Started GET "/courier/1" for 127.0.0.1 at 2021-07-19 14:09:32 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourier Load (3.6ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 5602)
+Completed 200 OK in 26ms (Views: 14.9ms | ActiveRecord: 3.6ms | Allocations: 6774)
+
+
+Started GET "/courier/2" for 127.0.0.1 at 2021-07-19 14:09:34 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourier Load (2.7ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 5599)
+Completed 200 OK in 19ms (Views: 10.4ms | ActiveRecord: 2.7ms | Allocations: 6734)
+
+
+Started GET "/courier/2" for 127.0.0.1 at 2021-07-19 14:28:46 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourier Load (0.5ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 184)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 6126)
+Completed 200 OK in 22ms (Views: 5.6ms | ActiveRecord: 6.9ms | Allocations: 14571)
+
+
+Started GET "/courier" for 127.0.0.1 at 2021-07-19 14:28:46 +0300
+Processing by CourierController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/index.html.erb within layouts/application
+  [1m[36mCourier Load (2.5ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/courier/index.html.erb:4
+  Rendered courier/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 1272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 6829)
+Completed 200 OK in 27ms (Views: 23.0ms | ActiveRecord: 2.5ms | Allocations: 7464)
+
+
+Started GET "/courier" for 127.0.0.1 at 2021-07-19 14:28:47 +0300
+Processing by CourierController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/index.html.erb within layouts/application
+  [1m[36mCourier Load (2.6ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/courier/index.html.erb:4
+  Rendered courier/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 953)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 6510)
+Completed 200 OK in 25ms (Views: 21.5ms | ActiveRecord: 2.6ms | Allocations: 6964)
+
+
+Started GET "/courier/1" for 127.0.0.1 at 2021-07-19 14:28:48 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourier Load (2.3ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 5599)
+Completed 200 OK in 17ms (Views: 8.4ms | ActiveRecord: 2.3ms | Allocations: 6770)
+
+
+Started GET "/courier/2" for 127.0.0.1 at 2021-07-19 14:28:49 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourier Load (1.2ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 5605)
+Completed 200 OK in 15ms (Views: 9.0ms | ActiveRecord: 1.2ms | Allocations: 6744)
+
+
+Started GET "/courier/3" for 127.0.0.1 at 2021-07-19 14:28:51 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCourier Load (3.4ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 5605)
+Completed 200 OK in 24ms (Views: 12.5ms | ActiveRecord: 3.4ms | Allocations: 6741)
+
+
+Started GET "/courier" for 127.0.0.1 at 2021-07-19 14:30:34 +0300
+Processing by CourierController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/index.html.erb within layouts/application
+  [1m[36mCourier Load (2.9ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/courier/index.html.erb:4
+  Rendered courier/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 2182)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 2256)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 2.9ms | Allocations: 3548)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    3: <ul>
+    4:   <% @couriers.each do |courier| %>
+    5:     <li>
+    6:     <%= link_to courier.name courier%>
+    7:     <!--<a href="<%= courier_path(courier)%>"><%= courier.name%></a>-->
+    8:     </li>
+    9:   <% end %>
+  
+app/views/courier/index.html.erb:6
+app/views/courier/index.html.erb:4
+Started GET "/courier" for 127.0.0.1 at 2021-07-19 14:30:57 +0300
+Processing by CourierController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/index.html.erb within layouts/application
+  [1m[36mCourier Load (0.8ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/courier/index.html.erb:4
+  Rendered courier/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1505)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 7459)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.8ms | Allocations: 8848)
+
+
+Started GET "/courier/1" for 127.0.0.1 at 2021-07-19 14:30:58 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourier Load (2.1ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 136)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 5693)
+Completed 200 OK in 28ms (Views: 18.4ms | ActiveRecord: 2.1ms | Allocations: 7040)
+
+
+Started GET "/courier/2" for 127.0.0.1 at 2021-07-19 14:31:00 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourier Load (2.3ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 5599)
+Completed 200 OK in 20ms (Views: 10.1ms | ActiveRecord: 2.3ms | Allocations: 6734)
+
+
+Started GET "/courier/3" for 127.0.0.1 at 2021-07-19 14:31:02 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCourier Load (1.8ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 5599)
+Completed 200 OK in 25ms (Views: 16.4ms | ActiveRecord: 1.8ms | Allocations: 6734)
+
+
+Started GET "/courier/new" for 127.0.0.1 at 2021-07-19 14:36:53 +0300
+Processing by CourierController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/new.html.erb within layouts/application
+  Rendered courier/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 3523)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3597)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 7.7ms | Allocations: 10937)
+
+
+  
+ActionView::Template::Error (undefined method `couriers_path' for #<ActionView::Base:0x0000000000ab18>
+Did you mean?  courier_path):
+    1: <h1>New Courier</h2>
+    2: 
+    3: <%= form_with model: @courier do |form| %>
+    4:   <div>
+    5:     <%= form.label :name %><br>
+    6:     <%= form.text_field :name %>
+  
+app/views/courier/new.html.erb:3
+Started GET "/courier/new" for 127.0.0.1 at 2021-07-19 14:38:10 +0300
+Processing by CourierController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/new.html.erb within layouts/application
+  Rendered courier/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 3408)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3482)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 4838)
+
+
+  
+ActionView::Template::Error (undefined method `couriers_path' for #<ActionView::Base:0x0000000000b0b8>
+Did you mean?  courier_path):
+    1: <h1>New Courier</h2>
+    2: 
+    3: <%= form_with model: @courier do |form| %>
+    4:   <div>
+    5:     <%= form.label :name %><br>
+    6:     <%= form.text_field :name %>
+  
+app/views/courier/new.html.erb:3
+Started GET "/courier/create" for 127.0.0.1 at 2021-07-19 14:40:39 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"create"}
+  [1m[36mCourier Load (0.5ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+Completed 404 Not Found in 10ms (ActiveRecord: 5.8ms | Allocations: 3476)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Courier with 'id'=create):
+  
+app/controllers/courier_controller.rb:7:in `show'
+Started GET "/courier/creat" for 127.0.0.1 at 2021-07-19 14:40:49 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"creat"}
+  [1m[36mCourier Load (0.8ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.8ms | Allocations: 1288)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Courier with 'id'=creat):
+  
+app/controllers/courier_controller.rb:7:in `show'
+Started GET "/courier/creat" for 127.0.0.1 at 2021-07-19 14:41:35 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"creat"}
+  [1m[36mCourier Load (0.5ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+Completed 404 Not Found in 8ms (ActiveRecord: 4.2ms | Allocations: 3063)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Courier with 'id'=creat):
+  
+app/controllers/courier_controller.rb:7:in `show'
+Started GET "/courier/create" for 127.0.0.1 at 2021-07-19 14:41:38 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"create"}
+  [1m[36mCourier Load (0.5ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.5ms | Allocations: 1285)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Courier with 'id'=create):
+  
+app/controllers/courier_controller.rb:7:in `show'
+Started GET "/courier/" for 127.0.0.1 at 2021-07-19 14:43:15 +0300
+Processing by CourierController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/index.html.erb within layouts/application
+  [1m[36mCourier Load (0.7ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/courier/index.html.erb:4
+  Rendered courier/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 3426)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 9380)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.7ms | Allocations: 10210)
+
+
+Started GET "/courier/1" for 127.0.0.1 at 2021-07-19 14:43:16 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourier Load (2.1ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 138)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 5695)
+Completed 200 OK in 20ms (Views: 11.5ms | ActiveRecord: 2.1ms | Allocations: 7068)
+
+
+Started GET "/courier/2" for 127.0.0.1 at 2021-07-19 14:43:18 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourier Load (2.0ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 5599)
+Completed 200 OK in 23ms (Views: 15.6ms | ActiveRecord: 2.0ms | Allocations: 6734)
+
+
+Started GET "/courier/3" for 127.0.0.1 at 2021-07-19 14:43:20 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCourier Load (0.8ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 5599)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.8ms | Allocations: 6734)
+
+
+Started GET "/courier/new" for 127.0.0.1 at 2021-07-19 14:45:01 +0300
+Processing by CourierController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/new.html.erb within layouts/application
+  Rendered courier/new.html.erb within layouts/application (Duration: 9.2ms | Allocations: 3199)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 3267)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 3702)
+
+
+  
+ActionView::Template::Error (undefined method `couriers_path' for #<ActionView::Base:0x0000000000e3d0>
+Did you mean?  courier_path):
+    1: <h1>New Courier</h2>
+    2: 
+    3: <%= form_with model: @courier do |form| %>
+    4:   <div>
+    5:     <%= form.label :name %><br>
+    6:     <%= form.text_field :name %>
+  
+app/views/courier/new.html.erb:3
+Started GET "/courier/" for 127.0.0.1 at 2021-07-19 14:49:20 +0300
+Processing by CourierController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/index.html.erb within layouts/application
+  [1m[36mCourier Load (0.7ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/courier/index.html.erb:4
+  Rendered courier/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 6870)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 12632)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 6.7ms | Allocations: 14170)
+
+
+Started GET "/courier/2" for 127.0.0.1 at 2021-07-19 14:49:24 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourier Load (0.7ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 45)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 5602)
+Completed 200 OK in 9ms (Views: 5.0ms | ActiveRecord: 1.3ms | Allocations: 7162)
+
+
+Started GET "/courier/new" for 127.0.0.1 at 2021-07-19 14:50:52 +0300
+Processing by CourierController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/new.html.erb within layouts/application
+  Rendered courier/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 3513)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3587)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 4924)
+
+
+  
+ActionView::Template::Error (undefined method `couriers_path' for #<ActionView::Base:0x0000000000f7a8>
+Did you mean?  courier_path):
+    1: <h1>New Courier</h2>
+    2: 
+    3: <%= form_with model: @courier do |form| %>
+    4:   <div>
+    5:     <%= form.label :name %><br>
+    6:     <%= form.text_field :name %>
+  
+app/views/courier/new.html.erb:3
+Started GET "/courier/new" for 127.0.0.1 at 2021-07-19 14:51:21 +0300
+Processing by CourierController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/new.html.erb within layouts/application
+  Rendered courier/new.html.erb within layouts/application (Duration: 115.8ms | Allocations: 7868)
+  Rendered layout layouts/application.html.erb (Duration: 116.3ms | Allocations: 7951)
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 0.0ms | Allocations: 9305)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    4:   <div>
+    5:     <%= form.label :name %><br>
+    6:     <%= form.text_field :name %>
+    7:     <% @couriers.errors.full_messages_for(:name).each do |message| %>
+    8:       <div><%= message %></div>
+    9:     <% end %>
+   10:   </div>
+  
+app/views/courier/new.html.erb:7
+app/views/courier/new.html.erb:3
+Started GET "/courier/new" for 127.0.0.1 at 2021-07-19 14:51:48 +0300
+Processing by CourierController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/new.html.erb within layouts/application
+  Rendered courier/new.html.erb within layouts/application (Duration: 21.1ms | Allocations: 3509)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 3583)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms | Allocations: 4937)
+
+
+  
+ActionView::Template::Error (undefined method `couriers_path' for #<ActionView::Base:0x00000000010040>
+Did you mean?  courier_path):
+    1: <h1>New Courier</h2>
+    2: 
+    3: <%= form_with model: @courier do |form| %>
+    4:   <div>
+    5:     <%= form.label :name %><br>
+    6:     <%= form.text_field :name %>
+  
+app/views/courier/new.html.erb:3
+Started GET "/courier/new" for 127.0.0.1 at 2021-07-19 14:58:07 +0300
+Processing by CourierController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/new.html.erb within layouts/application
+  Rendered courier/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3561)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3635)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 5.0ms | Allocations: 11118)
+
+
+  
+ActionView::Template::Error (undefined method `couriers_path' for #<ActionView::Base:0x00000000011490>
+Did you mean?  courier_path):
+    1: <h1>New Courier</h2>
+    2: 
+    3: <%= form_with model: @courier do |form| %>
+    4:   <div>
+    5:     <%= form.label :name %><br>
+    6:     <%= form.text_field :name %>
+  
+app/views/courier/new.html.erb:3
+Started GET "/courier/new" for 127.0.0.1 at 2021-07-19 15:01:48 +0300
+Processing by CourierController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/new.html.erb within layouts/application
+  Rendered courier/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 3684)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3758)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 4.5ms | Allocations: 8937)
+
+
+  
+ActionView::Template::Error (undefined method `couriers_path' for #<ActionView::Base:0x000000000128e0>
+Did you mean?  courier_path):
+    1: <!--<h1>New Courier</h2>
+    2: 
+    3: <%= form_with model: @courier do |form| %>
+    4:   <div>
+    5:     <%= form.label :name %><br>
+    6:     <%= form.text_field :name %>
+  
+app/views/courier/new.html.erb:3
+Started GET "/courier/new" for 127.0.0.1 at 2021-07-19 15:02:15 +0300
+Processing by CourierController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/new.html.erb within layouts/application
+  Rendered courier/new.html.erb within layouts/application (Duration: 15.3ms | Allocations: 3411)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 3485)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 4838)
+
+
+  
+ActionView::Template::Error (undefined method `couriers_path' for #<ActionView::Base:0x00000000012d68>
+Did you mean?  courier_path):
+    1: <h1>New Courier</h1>
+    2: 
+    3: <%= form_with model: @courier do |form| %>
+    4:   <div>
+    5:     <%= form.label :name %><br>
+    6:     <%= form.text_field :name %>
+  
+app/views/courier/new.html.erb:3
+Started GET "/courier/new" for 127.0.0.1 at 2021-07-19 15:02:57 +0300
+Processing by CourierController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/new.html.erb within layouts/application
+  Rendered courier/new.html.erb within layouts/application (Duration: 20.7ms | Allocations: 4916)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 10775)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms | Allocations: 12176)
+
+
+Started POST "/courier/new" for 127.0.0.1 at 2021-07-19 15:03:09 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/courier/new"):
+  
+Started GET "/courier/new" for 127.0.0.1 at 2021-07-19 15:04:04 +0300
+Processing by CourierController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/new.html.erb within layouts/application
+  Rendered courier/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2698)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 2772)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 4083)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    4:   <div>
+    5:     <%= form.label :name %><br>
+    6:     <%= form.text_field :name %>
+    7:     <% @couriers.errors.full_messages_for(:name).each do |message| %>
+    8:       <div><%= message %></div>
+    9:     <% end %>
+   10:   </div>
+  
+app/views/courier/new.html.erb:7
+app/views/courier/new.html.erb:3
+Started POST "/__web_console/repl_sessions/970a0ba35f981e4f7f3acc9e758340ba/trace" for 127.0.0.1 at 2021-07-19 15:05:01 +0300
+Started POST "/__web_console/repl_sessions/970a0ba35f981e4f7f3acc9e758340ba/trace" for 127.0.0.1 at 2021-07-19 15:05:02 +0300
+Started POST "/__web_console/repl_sessions/970a0ba35f981e4f7f3acc9e758340ba/trace" for 127.0.0.1 at 2021-07-19 15:05:09 +0300
+Started POST "/__web_console/repl_sessions/970a0ba35f981e4f7f3acc9e758340ba/trace" for 127.0.0.1 at 2021-07-19 15:05:10 +0300
+Started GET "/courier/new" for 127.0.0.1 at 2021-07-19 15:05:22 +0300
+Processing by CourierController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/new.html.erb within layouts/application
+  Rendered courier/new.html.erb within layouts/application (Duration: 21.5ms | Allocations: 3511)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 3585)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms | Allocations: 4939)
+
+
+  
+ActionView::Template::Error (undefined method `couriers_path' for #<ActionView::Base:0x00000000013bf0>
+Did you mean?  courier_path):
+    1: <h1>New Courier</h1>
+    2: 
+    3: <%= form_with model: @courier do |form| %>
+    4:   <div>
+    5:     <%= form.label :name %><br>
+    6:     <%= form.text_field :name %>
+  
+app/views/courier/new.html.erb:3
+Started GET "/courier/new" for 127.0.0.1 at 2021-07-19 15:17:13 +0300
+Processing by CourierController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/new.html.erb within layouts/application
+  Rendered courier/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 3257)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3331)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 4.6ms | Allocations: 10132)
+
+
+  
+ActionView::Template::Error (undefined method `couriers_path' for #<ActionView::Base:0x00000000015018>
+Did you mean?  courier_path):
+    1: <h1>New Courier</h1>
+    2: 
+    3: <%= form_with model: @courier do |form| %>
+    4:   <div>
+    5:     <%= form.label :name %><br>
+    6:     <%= form.text_field :name %>
+  
+app/views/courier/new.html.erb:3
+Started GET "/articles/new" for 127.0.0.1 at 2021-07-19 15:18:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/articles/new"):
+  
+Started GET "/courier/new" for 127.0.0.1 at 2021-07-19 15:19:22 +0300
+Processing by CourierController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/new.html.erb within layouts/application
+  Rendered courier/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 3278)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3352)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 3.8ms | Allocations: 7847)
+
+
+  
+ActionView::Template::Error (undefined method `couriers_path' for #<ActionView::Base:0x00000000016580>
+Did you mean?  courier_path):
+    1: <h1>New Courier</h1>
+    2: 
+    3: <%= form_with model: @courier do |form| %>
+    4:   <div>
+    5:     <%= form.label :name %><br>
+    6:     <%= form.text_field :name %>
+  
+app/views/courier/new.html.erb:3
+Started GET "/courier/" for 127.0.0.1 at 2021-07-19 15:22:28 +0300
+Processing by CourierController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/index.html.erb within layouts/application
+  [1m[36mCourier Load (0.8ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/courier/index.html.erb:4
+  Rendered courier/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1443)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 7365)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.8ms | Allocations: 8072)
+
+
+Started GET "/courier/1" for 127.0.0.1 at 2021-07-19 15:22:29 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourier Load (2.4ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 141)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 5704)
+Completed 200 OK in 27ms (Views: 12.8ms | ActiveRecord: 4.4ms | Allocations: 7341)
+
+
+Started GET "/courier/2" for 127.0.0.1 at 2021-07-19 15:22:31 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourier Load (3.2ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 5599)
+Completed 200 OK in 22ms (Views: 11.7ms | ActiveRecord: 3.2ms | Allocations: 6734)
+
+
+Started GET "/courier/3" for 127.0.0.1 at 2021-07-19 15:22:33 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCourier Load (2.2ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 5599)
+Completed 200 OK in 26ms (Views: 17.8ms | ActiveRecord: 2.2ms | Allocations: 6734)
+
+
+Started GET "/courier/" for 127.0.0.1 at 2021-07-19 15:24:43 +0300
+Processing by CourierController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/index.html.erb within layouts/application
+  [1m[36mCourier Load (1.2ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/courier/index.html.erb:4
+  Rendered courier/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1032)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 6606)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 1.2ms | Allocations: 7008)
+
+
+Started GET "/courier/show" for 127.0.0.1 at 2021-07-19 15:28:08 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mCourier Load (0.6ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.6ms | Allocations: 1248)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Courier with 'id'=show):
+  
+app/controllers/courier_controller.rb:7:in `show'
+Started GET "/courier/show/1" for 127.0.0.1 at 2021-07-19 15:31:49 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/courier/show/1"):
+  
+Started GET "/courier/" for 127.0.0.1 at 2021-07-19 15:31:54 +0300
+Processing by CourierController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/index.html.erb within layouts/application
+  [1m[36mCourier Load (0.7ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/courier/index.html.erb:4
+  Rendered courier/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1032)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 6594)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.7ms | Allocations: 7048)
+
+
+Started GET "/courier/" for 127.0.0.1 at 2021-07-19 15:35:43 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/courier"):
+  
+Started GET "/courier/" for 127.0.0.1 at 2021-07-19 15:36:07 +0300
+Processing by CourierController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/index.html.erb within layouts/application
+  [1m[36mCourier Load (0.7ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/courier/index.html.erb:4
+  Rendered courier/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 4250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 10033)
+Completed 200 OK in 15ms (Views: 9.6ms | ActiveRecord: 4.5ms | Allocations: 11523)
+
+
+Started GET "/courier/" for 127.0.0.1 at 2021-07-19 15:40:07 +0300
+Processing by CourierController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/index.html.erb within layouts/application
+  [1m[36mCourier Load (0.6ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/courier/index.html.erb:4
+  Rendered courier/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1032)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.6ms | Allocations: 6588)
+Completed 200 OK in 57ms (Views: 55.4ms | ActiveRecord: 0.6ms | Allocations: 7094)
+
+
+Started GET "/courier/1" for 127.0.0.1 at 2021-07-19 15:40:08 +0300
+Processing by CourierController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourier Load (2.1ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/courier_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courier/show.html.erb within layouts/application
+  Rendered courier/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 45)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 5605)
+Completed 200 OK in 26ms (Views: 15.0ms | ActiveRecord: 2.1ms | Allocations: 6948)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2021-07-19 15:42:18 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/articles/new"):
+  
+Started GET "/courier/new" for 127.0.0.1 at 2021-07-19 15:42:29 +0300
+Processing by CourierController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/new.html.erb within layouts/application
+  Rendered courier/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 3200)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3268)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 3708)
+
+
+  
+ActionView::Template::Error (undefined method `couriers_path' for #<ActionView::Base:0x00000000019898>
+Did you mean?  courier_path):
+    1: <h1>New Courier</h1>
+    2: 
+    3: <%= form_with model: @courier do |form| %>
+    4:   <div>
+    5:     <%= form.label :name %><br>
+    6:     <%= form.text_field :name %>
+  
+app/views/courier/new.html.erb:3
+  [1m[36mCourier Load (0.4ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+Started GET "/courier/new" for 127.0.0.1 at 2021-07-19 15:51:28 +0300
+Processing by CourierController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/new.html.erb within layouts/application
+  Rendered courier/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2372)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 2446)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 4.7ms | Allocations: 9250)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    4:   <div>
+    5:     <%= form.label :name %><br>
+    6:     <%= form.text_field :name %>
+    7:     <% @courier.errors.full_messages_for(:name).each do |message| %>
+    8:       <div><%= message %></div>
+    9:     <% end %>
+   10:   </div>
+  
+app/views/courier/new.html.erb:7
+app/views/courier/new.html.erb:3
+Started GET "/courier/new" for 127.0.0.1 at 2021-07-19 15:52:05 +0300
+Processing by CourierController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courier/new.html.erb within layouts/application
+  Rendered courier/new.html.erb within layouts/application (Duration: 16.5ms | Allocations: 3585)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 3659)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 5013)
+
+
+  
+ActionView::Template::Error (undefined method `couriers_path' for #<ActionView::Base:0x0000000001b1e8>
+Did you mean?  courier_path):
+    1: <h1>New Courier</h1>
+    2: 
+    3: <%= form_with model: @myCourier do |form| %>
+    4:   <div>
+    5:     <%= form.label :name %><br>
+    6:     <%= form.text_field :name %>
+  
+app/views/courier/new.html.erb:3
+Started GET "/courier/1" for 127.0.0.1 at 2021-07-19 15:59:52 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/courier/1"):
+  
+Started GET "/courier/" for 127.0.0.1 at 2021-07-19 15:59:57 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/courier"):
+  
+  [1m[36mCourier Load (0.3ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+Started GET "/" for 127.0.0.1 at 2021-07-19 16:02:32 +0300
+Processing by CouriersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/index.html.erb within layouts/application
+  [1m[36mCourier Load (1.0ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/couriers/index.html.erb:4
+  Rendered couriers/index.html.erb within layouts/application (Duration: 13.9ms | Allocations: 5286)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 203.7ms | Allocations: 36153)
+Completed 200 OK in 213ms (Views: 201.4ms | ActiveRecord: 4.8ms | Allocations: 39572)
+
+
+Started GET "/couriers/1" for 127.0.0.1 at 2021-07-19 16:02:34 +0300
+Processing by CouriersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourier Load (3.3ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/couriers_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/show.html.erb within layouts/application
+  Rendered couriers/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 184)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 5911)
+Completed 200 OK in 33ms (Views: 11.2ms | ActiveRecord: 6.4ms | Allocations: 8353)
+
+
+Started GET "/couriers/2" for 127.0.0.1 at 2021-07-19 16:02:36 +0300
+Processing by CouriersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourier Load (2.2ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/couriers_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/show.html.erb within layouts/application
+  Rendered couriers/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 5605)
+Completed 200 OK in 18ms (Views: 9.1ms | ActiveRecord: 2.2ms | Allocations: 6802)
+
+
+Started GET "/couriers/3" for 127.0.0.1 at 2021-07-19 16:02:39 +0300
+Processing by CouriersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCourier Load (1.6ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/couriers_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/show.html.erb within layouts/application
+  Rendered couriers/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 5606)
+Completed 200 OK in 18ms (Views: 10.2ms | ActiveRecord: 1.6ms | Allocations: 6760)
+
+
+Started GET "/couriers/new" for 127.0.0.1 at 2021-07-19 16:02:53 +0300
+Processing by CouriersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/new.html.erb within layouts/application
+  Rendered couriers/new.html.erb within layouts/application (Duration: 12.3ms | Allocations: 2903)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 8605)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.0ms | Allocations: 9254)
+
+
+Started POST "/couriers" for 127.0.0.1 at 2021-07-19 16:03:41 +0300
+Processing by CouriersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "courier"=>{"name"=>"Test", "email"=>"Test"}, "commit"=>"Create Courier"}
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/new.html.erb within layouts/application
+  Rendered couriers/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1696)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 7177)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 8815)
+
+
+Started POST "/couriers" for 127.0.0.1 at 2021-07-19 16:03:53 +0300
+Processing by CouriersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "courier"=>{"name"=>"Test", "email"=>"Test email"}, "commit"=>"Create Courier"}
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/couriers_controller.rb:17:in `create'
+  [1m[36mCourier Create (52.5ms)[0m  [1m[32mINSERT INTO "couriers" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Test"], ["email", "Test email"], ["created_at", "2021-07-19 13:03:53.885971"], ["updated_at", "2021-07-19 13:03:53.885971"]]
+  ↳ app/controllers/couriers_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (33.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/couriers_controller.rb:17:in `create'
+Redirected to http://localhost:3000/couriers/4
+Completed 302 Found in 107ms (ActiveRecord: 89.0ms | Allocations: 3212)
+
+
+Started GET "/couriers/4" for 127.0.0.1 at 2021-07-19 16:03:54 +0300
+Processing by CouriersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCourier Load (1.5ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/couriers_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/show.html.erb within layouts/application
+  Rendered couriers/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 5605)
+Completed 200 OK in 17ms (Views: 9.9ms | ActiveRecord: 1.5ms | Allocations: 6766)
+
+
+Started GET "/couriers" for 127.0.0.1 at 2021-07-19 16:06:41 +0300
+Processing by CouriersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/index.html.erb within layouts/application
+  [1m[36mCourier Load (2.5ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/couriers/index.html.erb:4
+  Rendered couriers/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 1512)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 7467)
+Completed 200 OK in 35ms (Views: 30.2ms | ActiveRecord: 2.5ms | Allocations: 8827)
+
+
+Started GET "/couriers/new" for 127.0.0.1 at 2021-07-19 16:06:43 +0300
+Processing by CouriersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/new.html.erb within layouts/application
+  Rendered couriers/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1065)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 6614)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 7256)
+
+
+Started GET "/couriers" for 127.0.0.1 at 2021-07-19 16:07:10 +0300
+Processing by CouriersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/index.html.erb within layouts/application
+  [1m[36mCourier Load (2.8ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/couriers/index.html.erb:4
+  Rendered couriers/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 1496)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 7447)
+Completed 200 OK in 31ms (Views: 25.8ms | ActiveRecord: 2.8ms | Allocations: 8774)
+
+
+Started GET "/couriers" for 127.0.0.1 at 2021-07-19 16:07:51 +0300
+Processing by CouriersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/index.html.erb within layouts/application
+  [1m[36mCourier Load (0.6ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/couriers/index.html.erb:4
+  Rendered couriers/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1496)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 7447)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.6ms | Allocations: 8824)
+
+
+Started GET "/couriers" for 127.0.0.1 at 2021-07-19 16:09:16 +0300
+Processing by CouriersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/index.html.erb within layouts/application
+  [1m[36mCourier Load (0.6ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/couriers/index.html.erb:4
+  Rendered couriers/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 4527)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 10457)
+Completed 200 OK in 16ms (Views: 11.1ms | ActiveRecord: 3.7ms | Allocations: 12625)
+
+
+Started GET "/couriers/new" for 127.0.0.1 at 2021-07-19 16:09:17 +0300
+Processing by CouriersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/new.html.erb within layouts/application
+  Rendered couriers/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1085)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 6632)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 7278)
+
+
+Started POST "/couriers" for 127.0.0.1 at 2021-07-19 16:09:45 +0300
+Processing by CouriersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "courier"=>{"name"=>"Vadim", "email"=>"test4@gmail.com"}, "commit"=>"Create Courier"}
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/couriers_controller.rb:17:in `create'
+  [1m[36mCourier Create (1.0ms)[0m  [1m[32mINSERT INTO "couriers" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Vadim"], ["email", "test4@gmail.com"], ["created_at", "2021-07-19 13:09:45.061015"], ["updated_at", "2021-07-19 13:09:45.061015"]]
+  ↳ app/controllers/couriers_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (49.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/couriers_controller.rb:17:in `create'
+Redirected to http://localhost:3000/couriers/5
+Completed 302 Found in 60ms (ActiveRecord: 50.9ms | Allocations: 2925)
+
+
+Started GET "/couriers/5" for 127.0.0.1 at 2021-07-19 16:09:45 +0300
+Processing by CouriersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCourier Load (1.6ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/couriers_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/show.html.erb within layouts/application
+  Rendered couriers/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 136)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 5696)
+Completed 200 OK in 15ms (Views: 7.4ms | ActiveRecord: 1.6ms | Allocations: 7129)
+
+
+Started GET "/couriers/new" for 127.0.0.1 at 2021-07-19 16:09:48 +0300
+Processing by CouriersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/new.html.erb within layouts/application
+  Rendered couriers/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 682)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 6236)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 6694)
+
+
+Started GET "/couriers" for 127.0.0.1 at 2021-07-19 16:09:49 +0300
+Processing by CouriersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/index.html.erb within layouts/application
+  [1m[36mCourier Load (0.6ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/couriers/index.html.erb:4
+  Rendered couriers/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 6720)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.6ms | Allocations: 7179)
+
+
+Started GET "/couriers" for 127.0.0.1 at 2021-07-19 16:16:44 +0300
+Processing by CouriersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/index.html.erb within layouts/application
+  [1m[36mCourier Load (1.4ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/couriers/index.html.erb:4
+  Rendered couriers/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 7153)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 13090)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 7.2ms | Allocations: 15259)
+
+
+Started GET "/articles/1/edit" for 127.0.0.1 at 2021-07-19 16:17:22 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/articles/1/edit"):
+  
+Started GET "/couriers/1/edit" for 127.0.0.1 at 2021-07-19 16:17:32 +0300
+Processing by CouriersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourier Load (0.7ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/couriers_controller.rb:25:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/edit.html.erb within layouts/application
+  Rendered couriers/edit.html.erb within layouts/application (Duration: 3.3ms | Allocations: 4429)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 4497)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.4ms | Allocations: 6123)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<ActionView::Base:0x0000000000b4f0>
+Did you mean?  for
+               fork):
+    1: <h1>Edit Courier</h1>
+    2: 
+    3: <%= render form, courier:@courier %>
+  
+app/views/couriers/edit.html.erb:3
+Started GET "/couriers/1/edit" for 127.0.0.1 at 2021-07-19 16:20:03 +0300
+Processing by CouriersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourier Load (2.0ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/couriers_controller.rb:25:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/edit.html.erb within layouts/application
+  Rendered couriers/_form.html.erb (Duration: 3.7ms | Allocations: 1218)
+  Rendered couriers/edit.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1552)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 7483)
+Completed 200 OK in 31ms (Views: 21.6ms | ActiveRecord: 2.0ms | Allocations: 9492)
+
+
+Started PATCH "/couriers/1" for 127.0.0.1 at 2021-07-19 16:20:11 +0300
+Processing by CouriersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "courier"=>{"name"=>"Andrey@", "email"=>"test@gmail.com"}, "commit"=>"Update Courier", "id"=>"1"}
+  [1m[36mCourier Load (0.8ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/couriers_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/couriers_controller.rb:31:in `update'
+  [1m[36mCourier Update (1.8ms)[0m  [1m[33mUPDATE "couriers" SET "name" = $1, "updated_at" = $2 WHERE "couriers"."id" = $3[0m  [["name", "Andrey@"], ["updated_at", "2021-07-19 13:20:11.614128"], ["id", 1]]
+  ↳ app/controllers/couriers_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (125.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/couriers_controller.rb:31:in `update'
+Redirected to http://localhost:3000/couriers/1
+Completed 302 Found in 139ms (ActiveRecord: 128.8ms | Allocations: 3753)
+
+
+Started GET "/couriers/1" for 127.0.0.1 at 2021-07-19 16:20:11 +0300
+Processing by CouriersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourier Load (1.0ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/couriers_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/show.html.erb within layouts/application
+  Rendered couriers/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 137)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 5697)
+Completed 200 OK in 11ms (Views: 6.9ms | ActiveRecord: 1.0ms | Allocations: 6969)
+
+
+Started GET "/couriers" for 127.0.0.1 at 2021-07-19 16:20:20 +0300
+Processing by CouriersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/index.html.erb within layouts/application
+  [1m[36mCourier Load (0.9ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/couriers/index.html.erb:4
+  Rendered couriers/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1364)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 6923)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.9ms | Allocations: 7503)
+
+
+Started GET "/couriers/1" for 127.0.0.1 at 2021-07-19 16:20:34 +0300
+Processing by CouriersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourier Load (2.1ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/couriers_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/show.html.erb within layouts/application
+  Rendered couriers/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 5602)
+Completed 200 OK in 24ms (Views: 15.3ms | ActiveRecord: 2.1ms | Allocations: 6737)
+
+
+Started GET "/couriers" for 127.0.0.1 at 2021-07-19 16:24:33 +0300
+Processing by CouriersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/index.html.erb within layouts/application
+  [1m[36mCourier Load (0.9ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/couriers/index.html.erb:4
+  Rendered couriers/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1547)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 7498)
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 0.9ms | Allocations: 8821)
+
+
+Started GET "/couriers/2" for 127.0.0.1 at 2021-07-19 16:24:35 +0300
+Processing by CouriersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourier Load (2.9ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/couriers_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/show.html.erb within layouts/application
+  Rendered couriers/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 195)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 5754)
+Completed 200 OK in 29ms (Views: 17.1ms | ActiveRecord: 2.9ms | Allocations: 7100)
+
+
+Started GET "/couriers/2/edit" for 127.0.0.1 at 2021-07-19 16:24:36 +0300
+Processing by CouriersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourier Load (1.5ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/couriers_controller.rb:25:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/edit.html.erb within layouts/application
+  Rendered couriers/_form.html.erb (Duration: 3.0ms | Allocations: 1094)
+  Rendered couriers/edit.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1398)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 6945)
+Completed 200 OK in 19ms (Views: 11.9ms | ActiveRecord: 1.5ms | Allocations: 8204)
+
+
+Started GET "/couriers/5" for 127.0.0.1 at 2021-07-19 16:24:40 +0300
+Processing by CouriersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCourier Load (1.5ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/couriers_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/show.html.erb within layouts/application
+  Rendered couriers/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 78)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 5637)
+Completed 200 OK in 15ms (Views: 9.1ms | ActiveRecord: 1.5ms | Allocations: 6772)
+
+
+Started GET "/couriers/5/edit" for 127.0.0.1 at 2021-07-19 16:24:41 +0300
+Processing by CouriersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCourier Load (2.3ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/couriers_controller.rb:25:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/edit.html.erb within layouts/application
+  Rendered couriers/_form.html.erb (Duration: 2.7ms | Allocations: 714)
+  Rendered couriers/edit.html.erb within layouts/application (Duration: 3.3ms | Allocations: 807)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 6354)
+Completed 200 OK in 21ms (Views: 11.4ms | ActiveRecord: 2.3ms | Allocations: 7489)
+
+
+Started GET "/couriers/5" for 127.0.0.1 at 2021-07-19 16:28:35 +0300
+Processing by CouriersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCourier Load (0.5ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/couriers_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/show.html.erb within layouts/application
+  Rendered couriers/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 364)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 6302)
+Completed 200 OK in 18ms (Views: 6.0ms | ActiveRecord: 6.1ms | Allocations: 12455)
+
+
+Started GET "/couriers" for 127.0.0.1 at 2021-07-19 16:28:38 +0300
+Processing by CouriersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/index.html.erb within layouts/application
+  [1m[36mCourier Load (1.1ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/couriers/index.html.erb:4
+  Rendered couriers/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1525)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 7084)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 1.1ms | Allocations: 7720)
+
+
+Started GET "/couriers/4" for 127.0.0.1 at 2021-07-19 16:28:40 +0300
+Processing by CouriersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCourier Load (2.1ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/couriers_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/show.html.erb within layouts/application
+  Rendered couriers/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 5673)
+Completed 200 OK in 20ms (Views: 12.0ms | ActiveRecord: 2.1ms | Allocations: 6844)
+
+
+Started DELETE "/couriers/4" for 127.0.0.1 at 2021-07-19 16:28:44 +0300
+Processing by CouriersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"4"}
+  [1m[36mCourier Load (0.5ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/couriers_controller.rb:39:in `destroy'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/couriers_controller.rb:40:in `destroy'
+  [1m[36mCourier Destroy (0.7ms)[0m  [1m[31mDELETE FROM "couriers" WHERE "couriers"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/couriers_controller.rb:40:in `destroy'
+  [1m[36mTRANSACTION (76.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/couriers_controller.rb:40:in `destroy'
+Redirected to http://localhost:3000/
+Completed 302 Found in 84ms (ActiveRecord: 78.4ms | Allocations: 2882)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-19 16:28:44 +0300
+Processing by CouriersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/index.html.erb within layouts/application
+  [1m[36mCourier Load (2.5ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/couriers/index.html.erb:4
+  Rendered couriers/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 1103)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 6662)
+Completed 200 OK in 23ms (Views: 18.8ms | ActiveRecord: 2.5ms | Allocations: 7116)
+
+
+Started GET "/couriers/new" for 127.0.0.1 at 2021-07-19 16:29:12 +0300
+Processing by CouriersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/new.html.erb within layouts/application
+  Rendered couriers/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 4367)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 4435)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 4999)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<ActionView::Base:0x0000000000ce40>
+Did you mean?  for
+               fork):
+    1: <h1>New Courier</h1>
+    2: 
+    3: <%= render form, courier:@courier %>
+  
+app/views/couriers/new.html.erb:3
+Started GET "/" for 127.0.0.1 at 2021-07-19 16:29:29 +0300
+Processing by CouriersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/index.html.erb within layouts/application
+  [1m[36mCourier Load (0.8ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/couriers/index.html.erb:4
+  Rendered couriers/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1103)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 6669)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.8ms | Allocations: 7123)
+
+
+Started GET "/couriers/new" for 127.0.0.1 at 2021-07-19 16:29:37 +0300
+Processing by CouriersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/new.html.erb within layouts/application
+  Rendered couriers/new.html.erb within layouts/application (Duration: 13.8ms | Allocations: 4262)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 4330)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 4749)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<ActionView::Base:0x0000000000d278>
+Did you mean?  for
+               fork):
+    1: <h1>New Courier</h1>
+    2: 
+    3: <%= render form, courier:@courier %>
+  
+app/views/couriers/new.html.erb:3
+Started GET "/couriers/new" for 127.0.0.1 at 2021-07-19 16:29:50 +0300
+Processing by CouriersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/new.html.erb within layouts/application
+  Rendered couriers/_form.html.erb (Duration: 1.2ms | Allocations: 1150)
+  Rendered couriers/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1481)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 7412)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 8743)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-19 16:29:53 +0300
+Processing by CouriersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/index.html.erb within layouts/application
+  [1m[36mCourier Load (0.8ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/couriers/index.html.erb:4
+  Rendered couriers/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1409)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 6968)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.8ms | Allocations: 7601)
+
+
+Started GET "/couriers/new" for 127.0.0.1 at 2021-07-19 16:29:56 +0300
+Processing by CouriersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/new.html.erb within layouts/application
+  Rendered couriers/_form.html.erb (Duration: 1.4ms | Allocations: 684)
+  Rendered couriers/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 6324)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 6789)
+
+
+Started POST "/couriers" for 127.0.0.1 at 2021-07-19 16:30:17 +0300
+Processing by CouriersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "courier"=>{"name"=>"Test", "email"=>""}, "commit"=>"Create Courier"}
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/new.html.erb within layouts/application
+  Rendered couriers/_form.html.erb (Duration: 2.6ms | Allocations: 2489)
+  Rendered couriers/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2582)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 8055)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 9353)
+
+
+Started POST "/couriers" for 127.0.0.1 at 2021-07-19 16:30:38 +0300
+Processing by CouriersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "courier"=>{"name"=>"Test", "email"=>"Test email adress"}, "commit"=>"Create Courier"}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/couriers_controller.rb:17:in `create'
+  [1m[36mCourier Create (0.7ms)[0m  [1m[32mINSERT INTO "couriers" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Test"], ["email", "Test email adress"], ["created_at", "2021-07-19 13:30:38.957699"], ["updated_at", "2021-07-19 13:30:38.957699"]]
+  ↳ app/controllers/couriers_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (34.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/couriers_controller.rb:17:in `create'
+Redirected to http://localhost:3000/couriers/6
+Completed 302 Found in 42ms (ActiveRecord: 35.5ms | Allocations: 2758)
+
+
+Started GET "/couriers/6" for 127.0.0.1 at 2021-07-19 16:30:39 +0300
+Processing by CouriersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCourier Load (1.9ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/couriers_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/show.html.erb within layouts/application
+  Rendered couriers/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 251)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 5810)
+Completed 200 OK in 20ms (Views: 11.0ms | ActiveRecord: 1.9ms | Allocations: 7083)
+
+
+Started DELETE "/couriers/6" for 127.0.0.1 at 2021-07-19 16:30:45 +0300
+Processing by CouriersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"6"}
+  [1m[36mCourier Load (1.3ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers" WHERE "couriers"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/couriers_controller.rb:39:in `destroy'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/couriers_controller.rb:40:in `destroy'
+  [1m[36mCourier Destroy (1.1ms)[0m  [1m[31mDELETE FROM "couriers" WHERE "couriers"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/couriers_controller.rb:40:in `destroy'
+  [1m[36mTRANSACTION (65.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/couriers_controller.rb:40:in `destroy'
+Redirected to http://localhost:3000/
+Completed 302 Found in 76ms (ActiveRecord: 68.4ms | Allocations: 2745)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-19 16:30:45 +0300
+Processing by CouriersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering couriers/index.html.erb within layouts/application
+  [1m[36mCourier Load (2.9ms)[0m  [1m[34mSELECT "couriers".* FROM "couriers"[0m
+  ↳ app/views/couriers/index.html.erb:4
+  Rendered couriers/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1103)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 6662)
+Completed 200 OK in 18ms (Views: 14.2ms | ActiveRecord: 2.9ms | Allocations: 7116)
+
+
