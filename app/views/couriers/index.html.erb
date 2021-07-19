@@ -3,8 +3,7 @@
 <ul>
   <% @couriers.each do |courier| %>
     <li>
-    <%= link_to courier.name, courier%>
-    <!--<a href="<%= courier_path(courier)%>"><%= courier.name%></a>-->
+      <%= link_to courier.name, courier%>
     </li>
   <% end %>
 </ul>

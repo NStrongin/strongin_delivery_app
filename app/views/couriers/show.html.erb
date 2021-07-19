@@ -1,9 +1,16 @@
 <h1><%= @courier.name%></h1>
 <p><%= @courier.email%></p>
 
+<h2>Packages</h2>
+<%= render @courier.packages %>
+
+<h2>Add a package:</h2>
+<%= render "packages/form"%>
+
 <ul>
   <li><%= link_to "Edit", edit_courier_path(@courier) %></li>
   <li><%= link_to "Destroy", courier_path(@courier),
                   method: :delete,
-                  data: { confirm: "Are you sure?" } %></li>
+                  data: { confirm: "Are you sure? All packageses will delete too." } %></li>
+  <li><%= link_to "Back", couriers_path %></li>
 </ul>
